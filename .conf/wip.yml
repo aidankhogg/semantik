@@ -1,0 +1,57 @@
+system:
+  deployment:
+    version: 1.0.0
+    env: ${system.global.dev.name}
+    rollback_strategy: 'full_rollback'
+    secrets: null
+    connections: null
+
+  environments:
+    global:
+      active_env: ${system.global.dev}
+      python:
+        min_ver: 3.12
+        max_ver: 3.12
+      # Packages to install in ALL environments (versions may be overridden at point of use)
+      requirements_file: 'requirements.txt'
+      exclude_packages: null
+      use_system_site_packages: false
+      env_variables: null
+
+    dev:
+      name: 'development'
+      create: true
+      auto_activate: true
+      python:
+        ver: 3.12
+        interp: '/path/to/custom/location'
+
+      install_packages:
+        - {"pip": null}
+        - {"virtualenv": null}
+        - {"loguru": null}
+        - {"omegaconf": null}
+
+      extra_args: null
+      env_variables:
+        - { ENVIRONMENT: ${ system.environment.dev.name } }
+        - { DEBUG: true }
+
+    stage:
+      create: true
+      auto_activate: false
+      use_system_site_packages: false
+      extra_args: null
+      env_variables:
+        - { ENVIRONMENT: ${system.environment.stage.name} }
+        - { DEBUG: false }
+
+    prod:
+      create: true
+      auto_activate: false
+      use_system_site_packages: false
+      extra_args: null
+      env_variables:
+        - { ENVIRONMENT: ${system.environment.prod.name} }
+        - { DEBUG: false }
+
