@@ -5,7 +5,7 @@ from typing import Union
 
 def detect_project_path(override_flag_file: Union[str, None] = None) -> str:
     """
-    Get project path from by detecting a flag file. 'main.py' by default
+    Get project path from by detecting a flag file. 'main.py' by default.
     :param override_flag_file: specify an alternative file to be used as the flag of the root directory
     :return: string of the path or raises *FileNotFoundError*
     """
