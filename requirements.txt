@@ -1,7 +1,7 @@
 pip~=24.0
 setuptools~=69.2.0
 wheel~=0.43.0
-virtualenv
+virtualenv~=20.22.0
 
 omegaconf~=2.3.0
 cachetools~=5.3.3
@@ -13,8 +13,9 @@ cryptography~=42.0.5
 numpy~=1.26.3
 pandas~=2.2.1
 matplotlib~=3.8.4
+scikit-learn~=1.2.2
 
-aiohttp
+aiohttp~=3.9.5
 
 alpaca-py~=0.20.3
 backtrader~=1.9.78.123
