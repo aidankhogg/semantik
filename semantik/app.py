@@ -21,3 +21,7 @@ def start_app() -> None:
     :return:
     """
     pass
+
+
+if __name__ == '__main__':
+    start_app()
