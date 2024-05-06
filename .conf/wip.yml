@@ -73,6 +73,19 @@ semantik:
     enabled: true
   intelligence:
     enabled: true
+    agency:
+      directives:
+        - {}
+        - {}
+      requests:
+        statuses:
+          - draft
+          - submitted
+          - pending review
+          - awaiting response
+          - approved
+          - rejected
+          - paused
   resllience:
     enabled: true
   sentinel:
