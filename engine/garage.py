@@ -2,7 +2,7 @@ from semantik.app import start_app
 from commons.patterns.creational.singleton import ThreadedSingletonMeta
 
 """
-The garage module contains
+The garage module contains 
 """
 
 
