@@ -1,0 +1,3 @@
+from semantikIntelligence.agencies.counter import CounterIntelligenceDivision
+from semantikIntelligence.agencies.domestic import InternalIntelligenceDivision
+from semantikIntelligence.agencies.foreign import ExternalIntelligenceDivision
