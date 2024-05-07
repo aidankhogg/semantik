@@ -86,6 +86,12 @@ semantik:
           - approved
           - rejected
           - paused
+    survellience_levels:
+      - {"intense": None}
+      - {"high": None}
+      - {"medium": None}
+      - {"low": None}
+      - {"basic": None}
   resllience:
     enabled: true
   sentinel:

@@ -1,5 +1,7 @@
 from commons.patterns.creational.singleton import ThreadedSingletonMeta
 
+from semantikIntelligence.spook import IntelligenceAgency
+
 """
 The semantik app module contains the object representation of
 """
@@ -20,7 +22,8 @@ def start_app() -> None:
     TODO: Add docstring here for start_app method
     :return:
     """
-    pass
+    print("Initializing Semantik Intelligence...")
+    sia = IntelligenceAgency()
 
 
 if __name__ == '__main__':
