@@ -1,0 +1,28 @@
+meta:
+  name: engine_db
+  description: Engine database connection
+  type: mysql
+  version: 1.0.0
+  enabled: true
+  default: true
+  primary: true
+  read_only: false
+  read_write: true
+  read_write_split: false
+
+
+profile:
+  host: localhost
+  port: 3306
+  user: root
+  password: rootpassword
+  database: engine_db
+  charset: utf8
+  collation: utf8_general_ci
+  prefix: 'eng'
+  options: {}
+  flags: 0
+  timeout: 30
+  persistent: false
+  driver_options: {}
+  attributes: {}

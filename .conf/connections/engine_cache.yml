@@ -1,0 +1,23 @@
+meta:
+  name: engine_redis
+  description: Engine redis connection
+  type: redis
+  version: 1.0.0
+  enabled: true
+  default: false
+  primary: false
+  read_only: false
+  read_write: true
+
+profile:
+  host: localhost
+  port: 6379
+  user: ''
+  password: ''
+  database: 1
+  timeout: 1.0
+  persistent: false
+  options: {}
+  attributes: {}
+  flags: 0
+  prefix: ''
